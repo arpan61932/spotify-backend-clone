@@ -41,7 +41,7 @@ async function authUser(req, res, next) {
 
         const decoded = jwt.verify(token, process.env.JWT_SECRET)
 
-        if (decoded.role !== "user") {
+        if (decoded.role !== "user" && decoded.role !== "artist") {
             return res.status(403).json({ message: "You don't have access" })
         }
 
