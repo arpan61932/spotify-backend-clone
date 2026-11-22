@@ -7,7 +7,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'https://vybe-ijp0.onrender.com',
+        target: 'https://vybe-backend-pvvh.onrender.com',
         changeOrigin: true,
         cookieRewrite: true,
       },
