@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: 'https://vybe-backend-pvvh.onrender.com',
   withCredentials: true,
 });
 
